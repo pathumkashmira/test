@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
+    <a class="skip-link" href="#top">Skip to content</a>
+
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#top"><img src="assets/logo.svg" alt="SignalPulse" width="160" height="35" /></a>
-        <nav aria-label="Primary">
+        <a class="brand" href="#top">
+          <img src="assets/logo.svg" alt="SignalPulse logo" width="160" height="35" />
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle site navigation" />
+        <label for="nav-toggle" class="nav-toggle-label">Menu</label>
+
+        <nav class="site-nav" aria-label="Primary">
           <ul class="nav-links">
             <li><a href="#how-it-works">How it Works</a></li>
             <li><a href="#pricing">Pricing</a></li>
@@ -19,21 +27,28 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+        <a class="button button-small desktop-cta" href="#pricing" aria-label="View pricing plans">Get Started</a>
       </div>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="container">
-          <p class="eyebrow">Live market intelligence</p>
-          <h1>Find high-conviction signals before the crowd.</h1>
-          <p>
-            SignalPulse combines real-time signals, analytics, and risk insights to
-            help modern traders move fast with confidence.
-          </p>
-          <a class="button" href="#pricing">View Plans</a>
+        <div class="container hero-layout">
+          <div>
+            <p class="eyebrow">Live market intelligence</p>
+            <h1>Find high-conviction signals before the crowd.</h1>
+            <p>
+              SignalPulse combines real-time signals, analytics, and risk insights to
+              help modern traders move fast with confidence.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#pricing" aria-label="View subscription plans">View Plans</a>
+              <a class="button button-secondary" href="#contact">Talk to Sales</a>
+            </div>
+          </div>
           <figure class="hero-image">
-            <img src="assets/hero-placeholder.svg" alt="Market performance dashboard preview" />
+            <img src="assets/hero-placeholder.svg" alt="SignalPulse dashboard showing live market signals and analytics" />
           </figure>
         </div>
       </section>
@@ -83,7 +98,7 @@
 
       <section id="testimonials" class="section">
         <div class="container">
-          <h2>Testimonials & performance</h2>
+          <h2>Testimonials &amp; performance</h2>
           <blockquote>
             “SignalPulse helped us cut reaction time by 40% while improving risk-adjusted returns.”
             <cite>— Portfolio Lead, NorthBridge Capital</cite>
@@ -117,10 +132,22 @@
 
     <footer id="contact" class="site-footer">
       <div class="container footer-inner">
-        <p>Ready to trade with better context?</p>
-        <a class="button" href="mailto:hello@signalpulse.example">Start your trial</a>
+        <div>
+          <h2>Ready to trade with better context?</h2>
+          <p>Get product updates and request a live walkthrough.</p>
+        </div>
+        <form class="signup-form" action="#" method="post" aria-label="Email signup form">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required aria-label="Work email" />
+          <button type="submit" class="button" aria-label="Start your trial with your email">Start your trial</button>
+        </form>
       </div>
     </footer>
+
+    <div class="mobile-sticky-cta" role="region" aria-label="Quick call to action">
+      <a class="button" href="#pricing" aria-label="Open pricing plans">Get started</a>
+      <a class="button button-secondary" href="#contact">Contact sales</a>
+    </div>
 
     <script src="scripts/main.js"></script>
   </body>
