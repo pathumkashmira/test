@@ -26,12 +26,29 @@
       <section class="hero">
         <div class="container">
           <p class="eyebrow">Live market intelligence</p>
-          <h1>Find high-conviction signals before the crowd.</h1>
-          <p>
-            SignalPulse combines real-time signals, analytics, and risk insights to
-            help modern traders move fast with confidence.
+          <h1>Signal intelligence and risk context for active traders and small trading desks.</h1>
+          <p class="subheadline">
+            Get concise, actionable alerts so you can validate setups faster and manage downside with more discipline.
           </p>
-          <a class="button" href="#pricing">View Plans</a>
+          <div class="cta-group" aria-label="Primary actions">
+            <a class="button" href="#pricing">Start Free Trial</a>
+            <a class="button button-secondary" href="#pricing">View Plans</a>
+          </div>
+
+          <article class="card performance-card" aria-label="Performance summary">
+            <h2>90-day performance snapshot</h2>
+            <p class="meta">Sample size: 1,284 alerts from Jan–Mar 2026.</p>
+            <ul class="stats" aria-label="Time-bounded results">
+              <li><strong>68%</strong> of alerts reached first target within 24 hours</li>
+              <li><strong>1.4:1</strong> median realized reward-to-risk ratio</li>
+              <li><strong>19 min</strong> median alert-to-decision time reported by users</li>
+            </ul>
+            <p class="risk-note">
+              Risk disclosure: Performance metrics are historical and limited to the period shown; they do not guarantee future results.
+              Trading involves substantial risk, including possible loss of principal.
+            </p>
+          </article>
+
           <figure class="hero-image">
             <img src="assets/hero-placeholder.svg" alt="Market performance dashboard preview" />
           </figure>
@@ -66,16 +83,28 @@
               <h3>Starter</h3>
               <p class="price">$29/mo</p>
               <p>Essential signals and daily summaries.</p>
+              <div class="cta-group">
+                <a class="button" href="#contact">Start Free Trial</a>
+                <a class="button button-secondary" href="#contact">Book Demo</a>
+              </div>
             </article>
             <article class="card featured">
               <h3>Pro</h3>
               <p class="price">$79/mo</p>
               <p>Advanced analytics, alerts, and risk intelligence.</p>
+              <div class="cta-group">
+                <a class="button" href="#contact">Start Free Trial</a>
+                <a class="button button-secondary" href="#contact">Book Demo</a>
+              </div>
             </article>
             <article class="card">
               <h3>Desk</h3>
               <p class="price">Custom</p>
               <p>Team workspaces, API access, and dedicated support.</p>
+              <div class="cta-group">
+                <a class="button" href="#contact">Start Free Trial</a>
+                <a class="button button-secondary" href="#contact">Book Demo</a>
+              </div>
             </article>
           </div>
         </div>
@@ -83,16 +112,31 @@
 
       <section id="testimonials" class="section">
         <div class="container">
-          <h2>Testimonials & performance</h2>
-          <blockquote>
-            “SignalPulse helped us cut reaction time by 40% while improving risk-adjusted returns.”
-            <cite>— Portfolio Lead, NorthBridge Capital</cite>
-          </blockquote>
-          <ul class="stats" aria-label="Performance summary">
-            <li><strong>94%</strong> alert relevance score</li>
-            <li><strong>31%</strong> faster decision cycles</li>
-            <li><strong>2.3x</strong> better signal-to-noise ratio</li>
-          </ul>
+          <h2>Social proof and operating results</h2>
+          <div class="grid">
+            <article class="card testimonial-card">
+              <p>
+                “Our analysts now review fewer low-quality setups and spend more time on high-conviction trades.”
+              </p>
+              <cite>— Maya T., Portfolio Analyst</cite>
+            </article>
+            <article class="card testimonial-card">
+              <p>
+                “The risk overlays made our stop placement process more consistent across the desk.”
+              </p>
+              <cite>— Jordan P., Futures Trader</cite>
+            </article>
+            <article class="card testimonial-card">
+              <p>
+                “We cut our morning scan workflow from 90 minutes to about 45 minutes using SignalPulse alerts.”
+              </p>
+              <cite>— Elena R., Independent Trader</cite>
+            </article>
+          </div>
+          <p class="risk-note">
+            Risk disclosure: Testimonials are individual experiences and may not be representative of all users. Any references to outcomes
+            are not promises of future performance.
+          </p>
         </div>
       </section>
 
@@ -117,8 +161,21 @@
 
     <footer id="contact" class="site-footer">
       <div class="container footer-inner">
-        <p>Ready to trade with better context?</p>
-        <a class="button" href="mailto:hello@signalpulse.example">Start your trial</a>
+        <div>
+          <p>Ready to trade with better context?</p>
+          <p>
+            Email us at <a href="mailto:hello@signalpulse.example">hello@signalpulse.example</a>
+            or message us on <a href="https://t.me/signalpulse" target="_blank" rel="noreferrer">Telegram</a>.
+          </p>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label for="email">Get a demo invite</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            <button class="button" type="submit">Join Signal Channel</button>
+            <a class="button button-secondary" href="#pricing">View Plans</a>
+          </div>
+        </form>
       </div>
     </footer>
 
