@@ -7,22 +7,40 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <main class="section">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="SignalPulse" width="160" height="35" /></a>
+      </div>
+    </header>
+
+    <main class="section legal-content">
       <div class="container">
         <h1>Risk Disclaimer</h1>
+        <p class="legal-meta"><strong>[PLACEHOLDER — LEGAL REVIEW REQUIRED]</strong> Effective date: YYYY-MM-DD.</p>
         <p><strong>Not financial advice:</strong> SignalPulse provides market data, analytics, and educational information only. Nothing on this website or in the product should be interpreted as financial, investment, legal, tax, or accounting advice.</p>
-        <p><strong>Risk of loss:</strong> Trading and investing in any market involves substantial risk, including the potential loss of your entire principal. Past performance does not guarantee future results.</p>
+        <p><strong>Risk of loss:</strong> Trading and investing in any market involves substantial risk, including the possible loss of your entire principal. Past performance does not guarantee future results.</p>
         <p>You are solely responsible for evaluating any strategy, signal, or decision and for obtaining professional advice tailored to your situation before acting.</p>
 
         <h2>Legal Review Placeholders</h2>
         <ul>
-          <li><strong>[PLACEHOLDER — LEGAL REVIEW REQUIRED]</strong> Insert jurisdiction-specific risk disclosure language.</li>
-          <li><strong>[PLACEHOLDER — LEGAL REVIEW REQUIRED]</strong> Insert regulated-entity status and licensing disclosures, if applicable.</li>
-          <li><strong>[PLACEHOLDER — LEGAL REVIEW REQUIRED]</strong> Insert product-specific limitations and eligibility requirements.</li>
+          <li class="legal-placeholder"><strong>[PLACEHOLDER — LEGAL REVIEW REQUIRED]</strong> Insert jurisdiction-specific risk disclosure language.</li>
+          <li class="legal-placeholder"><strong>[PLACEHOLDER — LEGAL REVIEW REQUIRED]</strong> Insert regulated-entity status and licensing disclosures, if applicable.</li>
+          <li class="legal-placeholder"><strong>[PLACEHOLDER — LEGAL REVIEW REQUIRED]</strong> Insert product-specific limitations, investor suitability, and eligibility requirements.</li>
         </ul>
-
-        <p><a href="index.html">Back to home</a></p>
       </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="index.html">Back to home</a>
+        <nav aria-label="Legal">
+          <ul class="nav-links footer-legal-links">
+            <li><a href="risk-disclaimer.html" aria-current="page">Risk Disclaimer</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

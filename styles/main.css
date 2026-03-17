@@ -178,3 +178,25 @@ details {
   border: 1px solid #263142;
   display: block;
 }
+
+.footer-legal-links a[aria-current='page'] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.legal-content {
+  min-height: calc(100vh - 140px);
+}
+
+.legal-content .container {
+  width: min(900px, 92vw);
+}
+
+.legal-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.legal-placeholder {
+  color: #f2c48d;
+}
